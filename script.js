@@ -1,6 +1,6 @@
 let stance = ['Ollie' , 'Switch ollie' , 'Fakie ollie' , 'Nollie']
 let rotation = ['' , '180' , '360']
-let flip = ['Ollie','Heel flip', 'Kick flip']
+let flip = ['Heel flip', 'Kick flip']
 let boardRotation = ['' , '180' , '360']
 
 function ranNumGenerator(arr){
