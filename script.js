@@ -38,3 +38,6 @@ function trickMessage(){
     return document.getElementById('trick').innerHTML = messageGenerator();
 }
 console.log(messageGenerator())
+console.log(messageGenerator())
+console.log(messageGenerator())
+console.log(messageGenerator())
