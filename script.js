@@ -10,28 +10,31 @@ function messageGenerator(){
     case 2:
         return 'kickflip';
     break;
-    case 4:
+    case 3:
         return 'pop-shuv'
     break
-    case 5:
+    case 4:
         return 'front-shuv';
     break;
-    case 6:
+    case 5:
         return '360 flip';
     break;
-    case 7:
+    case 6:
         return 'laser flip';
         break;
-    case 8:
+    case 7:
         return 'frontside 180 ollie';
     break;
-    case 9: 
+    case 8: 
         return 'backside 180 ollie';
         break;
-    case 10:
+    case 9:
         return 'nollie';
         break;
     }
 };
 
+function trickMessage(){
+    return document.getElementById('trick').innerHTML = messageGenerator();
+}
 console.log(messageGenerator())
