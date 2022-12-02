@@ -1,40 +1,23 @@
+let stance = ['Ollie' , 'Switch ollie' , 'Fakie ollie' , 'Nollie']
+let rotation = ['' , '180' , '360']
+let flip = ['Heel flip', 'Kick flip']
+let boardRotation = ['' , '180' , '360']
+
+function ranNumGenerator(arr){
+    let num = Math.floor(Math.random() * arr.length);
+    return arr[num]
+}
+console.log(ranNumGenerator(stance))
+
 function messageGenerator(){
-    let num =  Math.floor(Math.random() *10);
-    switch(num){
-        case 0:
-            return 'ollie';
-            break;
-    case 1: 
-        return 'heelflip';
-        break;
-    case 2:
-        return 'kickflip';
-    break;
-    case 3:
-        return 'pop-shuv'
-    break
-    case 4:
-        return 'front-shuv';
-    break;
-    case 5:
-        return '360 flip';
-    break;
-    case 6:
-        return 'laser flip';
-        break;
-    case 7:
-        return 'frontside 180 ollie';
-    break;
-    case 8: 
-        return 'backside 180 ollie';
-        break;
-    case 9:
-        return 'nollie';
-        break;
+     let trick = ranNumGenerator(rotation) + ' ' + ranNumGenerator(stance) + ', ' + ranNumGenerator(boardRotation) + ' ' + ranNumGenerator(flip);
+    if(trick === 'nollie'){return 'nollie'}
+    else{
+     return trick.toString();}
     }
-};
+
 
 function trickMessage(){
     return document.getElementById('trick').innerHTML = messageGenerator();
 }
-console.log(messageGenerator())
+
