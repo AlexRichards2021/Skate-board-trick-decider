@@ -7,13 +7,10 @@ function ranNumGenerator(arr){
     let num = Math.floor(Math.random() * arr.length);
     return arr[num]
 }
-console.log(ranNumGenerator(stance))
 
 function messageGenerator(){
      let trick = ranNumGenerator(rotation) + ' ' + ranNumGenerator(stance) + ', ' + ranNumGenerator(boardRotation) + ' ' + ranNumGenerator(flip);
-    if(trick === 'nollie'){return 'nollie'}
-    else{
-     return trick.toString();}
+     return trick.toString();
     }
 
 
